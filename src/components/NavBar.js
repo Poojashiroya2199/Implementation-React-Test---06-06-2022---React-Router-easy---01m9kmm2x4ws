@@ -1,10 +1,15 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
   return (
     <nav>
-      <a href="/home">home</a>
-      <a href="/">index </a>
+      <NavLink href="/" className="index-link">
+        index
+      </NavLink>
+      <NavLink href="/home" className="home-link">
+        home
+      </NavLink>
     </nav>
   );
 };
